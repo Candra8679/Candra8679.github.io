@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    
+}
+
+
+.navigasi {
+    background-color: #3b4997;
+    width: 100%;
+    height: 70px;
+    color: white;
+    position: fixed;
+}
+.logo{
+    float: left;
+    padding-top:20px ;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+}
+.menu{
+    margin-left: 750px;
+    padding-top: 27px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.menu ul li a:hover {
+    color: lightskyblue;
+    font-style: italic;
+}
+
+.banner {
+    background-color: #3b5997;
+    height: 700px;
+    text-align: center;
+    color: white;
+    
+
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    }
+
+
+.banner img{
+    border-radius:100px ;
+    height: 150px;
+    border: 6px solid white;
+    width: 150px;
+    margin-top: 100px;
+   
+}
+
+.banner h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.banner p{
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.banner button{
+    margin-top: 60px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+
+}
+
+.banner button:hover {
+    background-color: #3b5999;
+    border: 1px solid white;
+    color: white;
+}
+
+h1 span::before{
+    content: "";
+    animation: gerak infinite 8s ease;
+    transform: translateY(-50);
+    color: lightblue;
+    font-size: 30px;
+}
+
+@keyframes gerak {
+    0% {
+        content: 'Selamat Datang';
+    }
+    50% {
+        content: 'Saya Candra';
+    }
+    100% {
+        content: 'Terimakasih Sudah Singgah';
+    }
+}
+
+.box-pendidikan{
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 50px;
+    align-content: center;
+}
+.box-kiri, .box-tengah, .box-kanan {
+    width: 300px;
+    height: 300px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 30px;
+    padding: 70px 20px 70px 20px;
+    margin: 70px 20px 20px 50px;
+    float: left;
+    border-radius: 10px;
+}
+.box-kiri img, .box-tengah img, .box-kanan img{
+    width: 150px;
+    height: 150px;
+  
+}
+.box-kiri:hover, .box-tengah:hover, .box-kanan:hover{
+    background-color: #3b5999;
+    color: white;
+}
+
+
+.box-pendidikan h3, p{
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding:0px 20px;
+    color:black;
+    
+}
+
+.box-Gallery {
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 600px;
+    align-content: center;
+    margin-bottom: 100px;
+    
+}
+
+.container {
+    width: 600px;
+    border: 2px solid greenyellow;
+    background-color: rgba(20,20,20,0.5);
+    margin: 0 auto;
+   
+    
+    
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.grid img:hover{
+    transform: scale(1.5);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px; 
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.home{
+    
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    
+    
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    
+}
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+
+.activities-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.satu-activities {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.satu-activities img {
+    width: 60%;
+}
+
+.satu-activities p {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+    color: #0a0900;
+}
+
+.kontak-saya {
+    width: 100%;
+    background: #7D7C7C;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kontak-saya p{
+    color: #191717;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #7D7C7C;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.kontak-saya .button-dua:hover {
+    background-color: #F1EFEF;
+    border: 2px solid #fff;
+    color: #191717;
+    cursor: pointer;
+}
+
+footer {
+    
+    width: 100%;
+    height: 600px;
+    background-color: #4d4d4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.footer iframe{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+footer p:nth-child(1) {
+    font-size: 30px;
+    color: #CCC8AA;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+footer p:nth-child(2) {
+    font-size: 17px;
+    color: #CCC8AA;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+.social {
+    display: flex;
+}
+
+
+
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #CCC8AA;
+    border-radius: 50%;
+    margin: 22px 10px;
+    text-decoration: none;
+    color: #191717;
+    font-size: 20px;    
+}
+.social a img{
+    width: 70%;
+    background-color: #CCC8AA;
+    border-radius: 30%;
+}
+
+.social a:hover {
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.end {
+    position: absolute;
+    color: #CCC8AA;
+    bottom: 35px;
+}
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    }
+    
